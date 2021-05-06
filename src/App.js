@@ -1,6 +1,6 @@
 import logo from './logo.svg';
 import './App.css';
-
+import FetchData from './FetchData.js';
 function App() {
   return (
     <div className="App">
@@ -18,6 +18,7 @@ function App() {
           Learn React
         </a>
       </header>
+    <FetchData/>
     </div>
   );
 }
