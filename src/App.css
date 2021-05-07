@@ -30,7 +30,8 @@
 }
 
 .loanBox button {
-  margin-top: 10px;
+  background: yellow;
+  padding: 10px;
 }
 
 .details {
