@@ -14,7 +14,6 @@ const FetchData = () => {
       val.stopPropagation();
       setButtonPopup(true);
       setInvestCard("active")
-      setTotalAmountAvailable(getTotalAmountAvailable());
     }
     function getData(val){
       setData(val.target.value);
@@ -22,17 +21,7 @@ const FetchData = () => {
       setInvestAvialable(false);
     }
 
-    function getTotalAmountAvailable(){
-      
-      {InvestData.forEach(function(e){
-        let totalAmount = e.amount.replace(/\,/g, '')
-        let parseAmount = parseInt(totalAmount)
-        totalValue += parseAmount
-      })}
-      console.log(totalValue)
-      return totalValue
-    }
-    getTotalAmountAvailable();
+
    
         return (
           <div className="main">
@@ -76,14 +65,14 @@ const FetchData = () => {
                   })}
 
           </PopUp>
-              {/* {InvestData.forEach(function(e){
+              {InvestData.forEach(function(e){
                 let totalAmount = e.amount.replace(/\,/g, '')
                 let parseAmount = parseInt(totalAmount)
                 totalValue += parseAmount
-              })} */}
+              })}
 
 
-            <div className="totalAvailable"> Total amount avilable for investments: <span>£{totalAmountAvailable}</span></div>
+            <div className="totalAvailable"> Total amount avilable for investments: <span>£{totalValue}</span></div>
           
           </div>
         );
