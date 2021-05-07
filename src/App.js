@@ -1,12 +1,12 @@
 import logo from './logo.svg';
 import './App.css';
-import FetchData from './FetchData.js';
+import InvestCard from './InvestCard.js';
 import Navigation from './Navigation.js';
 function App() {
   return (
     <div className="App">
       <Navigation/>
-      <FetchData/>
+      <InvestCard/>
     </div>
   );
 }

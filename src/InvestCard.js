@@ -1,7 +1,8 @@
 import React, { Component, useState } from "react";
 import InvestData from './data/current-loans.json'
 import PopUp from './PopUp.js'
-const FetchData = () => {
+
+const InvestCard = () => {
   const [data, setData] = useState(null);
   const [invest, setInvest] = useState(false);
   const [investAvailable, setInvestAvialable] = useState(false)
@@ -80,7 +81,7 @@ const FetchData = () => {
     
 }
 
-export default FetchData;
+export default InvestCard;
 
 
 
